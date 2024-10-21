@@ -27,6 +27,14 @@ public class QuestManager : MonoBehaviour
     // [구현사항 3] 인스턴스 검사 로직
     private void Awake()
     {
-        instance = this;
+        if (Instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
