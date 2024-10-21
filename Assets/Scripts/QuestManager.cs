@@ -7,11 +7,19 @@ public class QuestManager : MonoBehaviour
     private static QuestManager instance;
 
     // [구현사항 2] 정적 프로퍼티 정의
-    public static QuestManager Instance
+    public QuestManager Instance
     {
-        
         get
         {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<QuestManager>();
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject("QuestManager");
+                    instance = obj.AddComponent<QuestManager>();
+                }
+            }
             return instance;
         }
     }
