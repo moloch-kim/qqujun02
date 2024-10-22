@@ -10,3 +10,18 @@ public class QuestDataSO : ScriptableObject
     public List<GameObject> QuestPrerequisites; // GameObject ¼öÁ¤
 
 }
+
+public class MonsterQuestDataSO : QuestDataSO
+{
+    [Header("MonsterQuest Detail")]
+    public string TargetName;
+    public int TargetCount;
+
+}
+
+public class EncounterQuestDataSO : QuestDataSO
+{
+    [Header("EncounterQuest Detail")]
+    public Transform TriggerPoint;
+    public Event EncounterEvent;
+}
