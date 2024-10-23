@@ -10,7 +10,6 @@ public class QuestDataSO : ScriptableObject
     public int QuestRequiredLevel;
     public string QuestNPCName;
     public List<GameObject> QuestPrerequisites; // GameObject ¼öÁ¤
-
 }
 
 [CreateAssetMenu(fileName = "New Monster Quest Data", menuName = "Quest/MonsterQuestDataSO")]

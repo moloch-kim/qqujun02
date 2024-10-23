@@ -7,6 +7,16 @@ public class QuestManager : MonoBehaviour
     private static QuestManager instance;
     public QuestDataSO[] quests;
 
+    private void Start()
+    {
+        int i = 0;
+        foreach(QuestDataSO info in quests)
+        {
+            i++;
+            Debug.Log($"Quest{i}: {info.QuestName}, {info.QuestDetail}");
+        }    
+    }
+
     public QuestManager Instance
     {
         get
@@ -26,9 +36,8 @@ public class QuestManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance != null)
         {
-            instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else

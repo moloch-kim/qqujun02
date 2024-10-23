@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Quest2
   m_EditorClassIdentifier: Assembly-CSharp::EncounterQuestDataSO
-  QuestName: 
-  QuestRequiredLevel: 0
-  QuestNPC: 0
+  QuestName: "\uC2A4\uD30C\uB974\uD0C0\uC5D0 \uC785\uC131\uD588\uB2E4"
+  QuestDetail: "\uD55C\uD6A8\uC2B9 \uB9E4\uB2C8\uC800\uB2D8\uACFC \uB300\uD654\uD558\uAE30"
+  QuestRequiredLevel: 10
+  QuestNPCName: "\uD55C\uD6A8\uC2B9 \uB9E4\uB2C8\uC800\uB2D8"
   QuestPrerequisites: []
   TriggerPoint: {fileID: 0}
