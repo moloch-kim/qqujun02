@@ -5,6 +5,8 @@ public class QuestManager : MonoBehaviour
 {
 
     private static QuestManager instance;
+
+
     public QuestDataSO[] quests;
 
     private void Start()
@@ -17,7 +19,7 @@ public class QuestManager : MonoBehaviour
         }    
     }
 
-    public QuestManager Instance
+    public static QuestManager Instance
     {
         get
         {
